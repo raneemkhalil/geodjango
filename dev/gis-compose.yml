@@ -1,0 +1,11 @@
+version: '3.1'
+
+services:
+
+    db:
+        container_name: gisdb
+        image: timescale/timescaledb-postgis:latest-pg13
+        environment:
+        - POSTGRES_PASSWORD=root
+        ports:
+        - "5432:5432"
